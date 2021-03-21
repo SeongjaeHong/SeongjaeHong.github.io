@@ -2,7 +2,9 @@
 layout: default
 ---
 
-{{ content }}
+<div class="content">
+    {{ content }}
+</div>
 
 <div class="columns is-multiline">
     <div class="column is-12">
@@ -15,8 +17,5 @@ layout: default
     {% endfor %}
     <div class="column is-12">
         {% include pagination.html %}
-    </div>
-    <div class="column is-12">
-        {% include subscribe.html %}
     </div>
 </div>

@@ -3,17 +3,17 @@ lang: ko
 title: seongjae
 tagline: Bulma Clean Theme
 email: sjhong310@gmail.com
-description: The demo site for Bulma Clean Theme, made for Jekyll and GitHub pages websites
-baseurl: #"/bulma-clean-theme"
-url: "https://www.csrhymes.com"
+description: 공부 블로그
+baseurl: ""
+url: "https://seongjaehong.github.io/"
 permalink: pretty
 #favicon: /path/to/favicon.png
 #hide_share_buttons: true
 #theme_color: '#eeeeee'
 #fixed_navbar: top
 
-paginate: 5
-paginate_path: "/blog/page:num"
+paginate: 3
+paginate_path: "/page:num"
 
 # Disqus Comments
 disqus:
@@ -39,7 +39,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - minimal
 
 livereload: true
 
@@ -65,15 +64,17 @@ defaults:
       layout: post
       image: https://via.placeholder.com/1200x800
       show_sidebar: true
+  -
+    scope:
+      path: ""
+      type: "blogs"
+    values:
+      author: "Seongjae Hong"
+      layout: blog
+      image: https://via.placeholder.com/1200x800
+      show_sidebar: false
 
 markdown: kramdown
 highlighter: rouge
 
 footer_menu: example_footer_menu
-
-collections:
-  products:
-    output: true
-    layout: product
-    image: https://via.placeholder.com/800x600
-    show_sidebar: false

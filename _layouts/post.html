@@ -19,7 +19,6 @@ layout: default
 {% include share-buttons.html %}
 {% endunless %}
 
-{% include disqus.html %}
-<!--{% if site.disqus.shortname %}-->
-<!--  {% include disqus.html %}-->
-<!--{% endif %}-->
+{% if site.disqus.shortname %}
+  {% include disqus.html %}
+{% endif %}

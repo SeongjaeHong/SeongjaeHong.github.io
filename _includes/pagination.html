@@ -2,12 +2,12 @@
     {% if paginator.previous_page %}
     <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="pagination-previous is-info">Previous</a>
     {% else %}
-    <p class="pagination-previous" disabled>Previous</p>
+    <p class="pagination-previous">Previous</p>
     {% endif %}
     {% if paginator.next_page %}
     <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="pagination-next is-info">Next</a>
     {% else %}
-    <p class="pagination-next" disabled >Next</p>
+    <p class="pagination-next">Next</p>
     {% endif %}
     <ul class="pagination-list">
         {% for page in (1..paginator.total_pages) %}
