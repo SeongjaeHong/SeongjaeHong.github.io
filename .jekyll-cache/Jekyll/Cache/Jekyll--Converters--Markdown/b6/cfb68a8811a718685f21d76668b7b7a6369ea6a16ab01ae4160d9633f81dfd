@@ -1,0 +1,8 @@
+I"d<h1 id="page-without-hero">Page Without Hero</h1>
+
+<p>This is a page without a hero.</p>
+
+<p>To hide the hero, set <code class="language-plaintext highlighter-rouge">hide_hero: true</code> in the page’s frontmatter.</p>
+
+<p>Hiding the hero means that there will not be a title and subtitle displayed, so it will have to be added to the page content.</p>
+:ET

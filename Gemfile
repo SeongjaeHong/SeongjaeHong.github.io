@@ -1,5 +1,10 @@
-source "https://rubygems.org"
+# frozen_string_literal: true
 
-gem "jekyll", "~> 3.7"
-gem "minimal-mistakes-jekyll"
-gem "kramdown-parser-gfm"
+source "https://rubygems.org"
+#gemspec
+
+gem "jekyll-feed", "~> 0.6"
+gem "jekyll-sitemap"
+gem "jekyll-paginate"
+gem "jekyll-seo-tag"
+gem "wdm"

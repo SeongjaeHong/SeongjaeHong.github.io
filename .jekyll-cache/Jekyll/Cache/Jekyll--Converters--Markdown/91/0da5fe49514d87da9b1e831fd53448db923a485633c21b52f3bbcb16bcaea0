@@ -1,0 +1,23 @@
+I"\<p>This is an example page with an embedded YouTube video.</p>
+
+<figure class="image is-16by9"> 
+    <iframe class="has-ratio" src="https://www.youtube.com/embed/iRuJufELrWo?start=0&amp;showinfo=0" frameborder="0" allowfullscreen="">
+    </iframe>
+</figure>
+
+<p>To embed the video, use an include where you want the video to appear and then pass in the YouTube id as the video variable.</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>youtube.html<span class="w"> </span><span class="na">video</span><span class="o">=</span><span class="s2">"videoid"</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>You can optionally include a start time in seconds. This works the same as the ?t= parameter in Youtube URLs.</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>youtube.html<span class="w"> </span><span class="na">video</span><span class="o">=</span><span class="s2">"videoid"</span><span class="w"> </span><span class="na">time</span><span class="o">=</span><span class="mi">210</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+<p>It is also possible to embed Vimeo videos in a similar way</p>
+
+<div class="language-liquid highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{%</span><span class="w"> </span><span class="nt">include</span><span class="w"> </span>vimeo.html<span class="w"> </span><span class="na">video</span><span class="o">=</span><span class="s2">"videoid"</span><span class="w"> </span><span class="p">%}</span>
+</code></pre></div></div>
+
+:ET

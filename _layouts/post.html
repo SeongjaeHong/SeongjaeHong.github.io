@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="content">
+
+    <p>작성일: {{ page.date | date: "%Y년 %-m월 %-d일" }}</p>
+
+    {{ content }}
+</div>
+
+<div class="tags">
+    {% for tag in page.tags %}
+      {% include tag.html tag=tag %}
+    {% endfor %}
+</div>
+
+{% unless site.hide_share_buttons %}
+{% include share-buttons.html %}
+{% endunless %}
+
+{% include disqus.html %}
+<!--{% if site.disqus.shortname %}-->
+<!--  {% include disqus.html %}-->
+<!--{% endif %}-->
