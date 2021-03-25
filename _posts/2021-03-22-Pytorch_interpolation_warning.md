@@ -4,7 +4,7 @@ title: Pytorch interpolation warning
 hero_image: https://github.com/SeongjaeHong/SeongjaeHong.github.io/blob/master/img/leaf.jpeg?raw=true
 hero_height: is-large
 hero_darken: true
-image: https://www.csrhymes.com/img/example-docs-page.jpg
+image: https://github.com/SeongjaeHong/SeongjaeHong.github.io/blob/master/img/interpolation.png?raw=true
 tags: pytorch
 comments: true
 ---
@@ -31,6 +31,10 @@ Align_corners=True 인 경우, 각 코너 픽셀의 중심점을 기준으로 �
 글만 봐서는 무슨 소리인지 한 번에 알기가 어렵다.
 
 구글 검색을 해본 결과 다음 글을 찾을 수 있었다. ([링크](https://discuss.pytorch.org/t/what-we-should-use-align-corners-false/22663/9))
+
+<center>
+<img src="https://github.com/SeongjaeHong/SeongjaeHong.github.io/blob/master/img/interpolation.png?raw=true">
+</center>
 
 `align_corners=True`인 경우, 보간법으로 새로 생성된 픽셀을 정렬할 때, 픽셀 간격을 양 모서리 끝 픽셀을 기준으로 정한다.
 
